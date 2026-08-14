@@ -1,0 +1,14 @@
+sample:
+  description: This app provides an example of how to integrate multiple VirtIO
+    devices with Zephyr including a resource table.
+  name: Multiple VirtIO devices with resource table example integration
+tests:
+  sample.ipc.multi_vdev:
+    build_only: true
+    platform_allow:
+      - frdm_imx93_mimx9352_m33
+    integration_platforms:
+      - frdm_imx93_mimx9352_m33
+    tags:
+      - ipm
+      - openamp
